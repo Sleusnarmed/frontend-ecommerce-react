@@ -1,24 +1,33 @@
 import './header.css'
-import searchIcon from '@/assets/search-icon.svg'
 import userIcon from '@/assets/user-icon.svg'
 import shoppingCart from '@/assets/shopping-cart.svg'
+import menuIcon from '@/assets/menu-icon.svg'
 
 const Header = () => {
   return (
     <nav className='header'>
-      <a href='/' className='header__logo'>SHIPPED.com</a>
       <ul className='header__nav-list'>
 
         <li className='header__list-item'>
-          Home
+          <a href='/' className='header__logo'>SHIPPED</a>
         </li>
 
         <li className='header__list-item'>
-          Shop
+          <a href='/' className='list-item__link'>
+            Home
+          </a>
         </li>
 
         <li className='header__list-item'>
-          Contact Us
+          <a href='/' className='list-item__link'>
+            Shop
+          </a>
+        </li>
+
+        <li className='header__list-item'>
+          <a href='/' className='list-item__link'>
+            Contact Us
+          </a>
         </li>
 
       </ul>
@@ -32,14 +41,6 @@ const Header = () => {
           </a>
         </li>
 
-        <li className='header__chars-item'>
-          <a href='/'>
-            <span>
-              <img src={searchIcon} alt='search-bar' className='chars_item__search-icon' />
-            </span>
-          </a>
-        </li>
-
         <li className='header-chars-item'>
           <a href='/'>
             <span className=''>
@@ -48,10 +49,11 @@ const Header = () => {
           </a>
         </li>
 
+        {/* clasName='header-chars-item' Aqui ira el icono de menu en dispositivos >600px */}
         <li className='header-chars-item'>
           <a href='/'>
-            <span>
-              <img src='' alt='' />
+            <span className=''>
+              <img src={menuIcon} alt='Menu' className='chars-item__menu-icon' />
             </span>
           </a>
         </li>

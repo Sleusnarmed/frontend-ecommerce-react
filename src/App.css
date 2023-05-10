@@ -1,9 +1,6 @@
-body {
-    padding: 0;
-    margin: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Oswald:wght@500&family=PT+Sans&display=swap');
 
-/*
+:root {
     --primary-100:#FFA500;
     --primary-200:#dd8900;
     --primary-300:#885400;
@@ -14,5 +11,20 @@ body {
     --bg-100:#EFEFEF;
     --bg-200:#e5e5e5;
     --bg-300:#bdbdbd;
-      
+}
+/*
+ -- fuentes
+    font-family: 'Oswald', sans-serif; --Titulos 
+    font-family: 'PT Sans', sans-serif; --Subtitulos 
+    font-family: 'Nunito', sans-serif; --Parrafos
 */  
+html {
+    font-size: 62.5%;
+}
+  
+body, * {
+    padding: 0;
+    margin: 0;
+    background-color: var(--bg-100);
+    box-sizing: border-box;
+}
