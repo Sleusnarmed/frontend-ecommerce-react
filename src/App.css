@@ -15,16 +15,61 @@
 /*
  -- fuentes
     font-family: 'Oswald', sans-serif; --Titulos 
-    font-family: 'PT Sans', sans-serif; --Subtitulos 
+    font-family: 'PT Sans', sans-serif; --parrafos
     font-family: 'Nunito', sans-serif; --Parrafos
 */  
 html {
     font-size: 62.5%;
 }
   
-body, * {
+body {
     padding: 0;
     margin: 0;
     background-color: var(--bg-100);
     box-sizing: border-box;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home__welcome{
+    display: flex;
+    justify-content: space-between;
+}
+
+.welcome__article p{
+    font-family: 'PT Sans', sans-serif;
+    color: var(--text-100);
+    font-size: 2em;
+    margin: 0;
+}
+
+.welcome__article h1 {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    color: var(--text-100);
+    font-size: 4em;
+}
+
+
+.welcome__img {
+    width: 400px;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+.hidden {
+    display: none;
 }

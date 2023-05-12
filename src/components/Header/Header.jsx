@@ -2,6 +2,7 @@ import './header.css'
 import userIcon from '@/assets/user-icon.svg'
 import shoppingCart from '@/assets/shopping-cart.svg'
 import menuIcon from '@/assets/menu-icon.svg'
+import logo from '@/assets/SHIPPED-LOGO.png'
 
 const Header = () => {
   return (
@@ -9,7 +10,9 @@ const Header = () => {
       <ul className='header__nav-list'>
 
         <li className='header__list-item'>
-          <a href='/' className='header__logo'>SHIPPED</a>
+          <a href='/' className='header__logo'>
+            <img src={logo} alt='logo' className='logo__img' />
+          </a>
         </li>
 
         <li className='header__list-item'>
